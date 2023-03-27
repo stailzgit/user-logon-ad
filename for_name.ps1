@@ -1,5 +1,5 @@
 param ($user)
-$user = "ñòàíèñëàâ"
+# $user = "˜˜˜˜˜˜˜˜˜"
 
 function GetLogonsUser($userName) {
   $result = ((get-aduser -Filter "(Name -like '*$userName*')" -Properties info).info).split("#")
